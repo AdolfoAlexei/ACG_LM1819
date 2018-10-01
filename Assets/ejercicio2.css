@@ -1,3 +1,27 @@
 body { 
-    background-image: url("banderaandalucia.png") 
+    background-image: url("banderaandalucia.png");
+    background-repeat: repeat;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+a {	
+	font-size: 25px;
+	text-align: center!important;
+	color: #420068;
+	display:block;
+}
+
+#textomapa {
+    font-weight: bold;
+    border-style: solid;
+    border-color: white;
+}
+
+img{
+    display:block;
+    margin:auto;
 }
