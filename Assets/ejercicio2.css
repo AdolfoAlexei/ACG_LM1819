@@ -3,6 +3,12 @@ body {
     background-repeat: repeat;
 }
 
+h1 {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
 p {
     text-align: center;
     font-size: 25px;
@@ -16,6 +22,8 @@ a {
 }
 
 #textomapa {
+    font-family: 'Indie Flower', cursive;
+    color: white;
     font-weight: bold;
     border-style: solid;
     border-color: white;
