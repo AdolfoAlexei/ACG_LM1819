@@ -1,0 +1,24 @@
+table {
+    border: 15px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    height: 25%;
+    width: 65%;
+}
+
+th, table {
+    border: 2px solid black;
+}
+td, table {
+    border: 2px solid black;
+}
+
+.verde {
+    background-color: rgb(152, 252, 152);   
+}
+
+#recreo {
+    background-color: rgb(255, 186, 102);
+    text-align: center;
+    letter-spacing: 60px;
+}
