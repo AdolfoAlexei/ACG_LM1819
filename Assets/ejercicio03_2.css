@@ -2,6 +2,7 @@ table {
     border: 15px solid black;
     border-collapse: collapse;
     text-align: center;
+    font-weight: bold;  
     height: 25%;
     width: 65%;
 }
