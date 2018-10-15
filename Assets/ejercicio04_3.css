@@ -8,7 +8,7 @@ body {
     margin: 0;
     color: hsl(233, 15%, 40%);
     font-family: "Cabin Sketch";
-    font-size: 4rem;
+    font-size: 64px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -19,7 +19,7 @@ body {
     padding-bottom: 5px;
     color: white;
     font-family: "Gabriela";
-    font-size: 2rem;
+    font-size: 3,2px;
   }
   
   div {
@@ -30,7 +30,7 @@ body {
     margin: 2px;
   }
   
-  div.vida {
+  div.informacion {
     margin: 0 10px;
   }
   
