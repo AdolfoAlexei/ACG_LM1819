@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: "playball", sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  
+  header {
+    background-color: hsl(15, 80%, 50%);
+    color: white;
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 10px 10px 40px;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  
+  main {
+    display: block;
+    border-left: hsl(15, 100%, 60%) 5px solid;
+    border-right: hsl(15, 100%, 60%) 5px solid;
+    margin: 0 5%;
+    padding: 0 5%;
+  }
+  
+  article {
+    clear: both;
+  }
+  
+  article.siglo {
+    margin: 50px 0;
+    padding-bottom: 20px;
+    background-color: hsl(15, 100%, 90%);
+  }
+  
+   h2, h3 {
+    margin: 0;
+    padding-left: 10px;
+    background-color: hsl(15, 100%, 60%);
+    color: white;
+  }
+
+  aside {
+    float: right;
+    border-left: hsl(15, 100%, 60%) 5px solid;
+    margin: 10px 0 10px 30px;
+    padding: 10px 20px;
+  }
+  
+  aside p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
