@@ -11,16 +11,29 @@
 <body>
 
     <h1>Formulario de prueba de HTML5</h1>
-      
 
     <form action="" method="get">
         <p>
-            Nombre: <input type="text" name="nombre" autofocus required />
+            Nombre: <input type="text" name="nombre" autofocus required autocomplete="off" placeholder="Indica tu primer nombre" />
         </p>
 
         <p>
             Correo electrónico: <input type="email" name="email" required />
         </p>
+
+        <p>
+            Contraseña: <input type="password" minlength="8" pattern="[a-z][0-9]">
+        </p>
+
+        <p>Lugar de nacimiento</p>
+        <input list="Lugar de nacimiento">
+        <datalist id="Lugar de nacimiento">
+            <option value="España">
+            <option value="Francia">
+            <option value="Italia">
+            <option value="Alemania">
+            <option value="Rusia">
+        </datalist>
 
         <p>
             URL: <input type="url" name="url" placeholder="Escribe la URL de tu página web personal" />
@@ -47,7 +60,7 @@
         </p>
 
         <p>
-            Número (min -10, max 10): <input type="number" name="numero" min="-10" max="10" value="0" />
+            Número (min -10, max 10): <input type="number" name="quantity" min="0" max="10">
         </p>
 
         <p>
