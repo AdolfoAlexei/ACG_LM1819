@@ -1,0 +1,64 @@
+/*Fondo de atrás a dos rayas*/
+
+body {
+    background-image: url("../Assets/fondolinux.jpg");
+    font-family: 'Arial', sans-serif;
+  }
+
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0px;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 18px;
+    color: #2F93DA;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background: rgb(4, 56, 99);
+  }
+  
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 280px;
+    width: 50px;
+    height: 50px;
+  }
+
+  /*Lateral izquiero superior*/
+
+.firstitem {
+    position: absolute;
+    background: rgb(50, 121, 131);
+    border: 2px solid yellow;
+    width: 240px;
+    height: 170px;
+    padding: 20px;
+    right: 200px;
+    top: 175px;
+    left: 850px;
+  }
+  
+  /*Lateral izquiero inferior*/
+  
+  .seconditem {
+    position: absolute;
+    background: rgb(50, 121, 131);
+    border: 2px solid yellow;
+    width: 240px;
+    height: 180px;
+    padding: 20px;
+    right: 200px;
+    top: 750px;
+    left: 850px;
+  }
