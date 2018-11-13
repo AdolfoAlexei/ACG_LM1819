@@ -8,6 +8,7 @@ body,html {
     background: url('../Assets/lambo.jpg');
     background-size: cover;
     font-family: 'Cabin Condensed', sans-serif;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,3 +18,33 @@ body,html {
   h1 {
     color: white;
   }
+
+nav {
+    margin: 0px;
+    border: 2px solid white;
+  }
+  
+nav ul {
+    list-style: none;
+    overflow: hidden;
+  }
+  
+ nav ul li {
+    float: left;
+    margin: 12px;
+  }
+  
+nav ul li a {
+    display: block;
+    color:#fff;
+    text-decoration: none;
+  }
+  
+nav ul li a:hover {
+    background: rgb(2, 134, 241);
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+
