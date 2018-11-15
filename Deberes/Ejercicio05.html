@@ -14,81 +14,85 @@
 
     <svg viewbox="0 0 100 20">
         <defs>
-          <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="5%" stop-color="#326384"/>
-            <stop offset="95%" stop-color="#123752"/>
-          </linearGradient>
-          <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
-              <animateTransform
-                  attributeName="transform"
-                  begin="0s"
-                  dur="1.5s"
-                  type="translate"
-                  from="0,0"
-                  to="40,0"
-                  repeatCount="indefinite" />
-            </path>
-          </pattern>
+            <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="5%" stop-color="#326384" />
+                <stop offset="95%" stop-color="#123752" />
+            </linearGradient>
+            <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)"
+                    fill="url(#gradient)">
+                    <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate" from="0,0" to="40,0"
+                        repeatCount="indefinite" />
+                </path>
+            </pattern>
         </defs>
-        <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">Formulario</text>
+        <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)" fill-opacity="0.6">Formulario</text>
         <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.1">Formulario</text>
-      </svg>
-      
+    </svg>
 
-    <form action="" method="get">
-        <p>
-            Nombre: <input type="text" name="nombre" autofocus required />
-        </p>
+    <table>
+        <form action="" method="get">
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    </td><input type="text" name="nombre" autofocus required autocomplete="off" placeholder="Indica tu primer nombre" /></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Correo electrónico:</td>
+                    <td> <input type="email" name="email" required /></td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td><input type="url" name="url" placeholder="Escribe la URL de tu página web personal" /></td>
+                </tr>
+                <tr>
+                    <td>Fecha</td>
+                    <td><input type="date" name="fecha" /></td>
+                </tr>
+                <tr>
+                    <td>Tiempo</td>
+                    <td><input type="time" name="tiempo" /></td>
+                </tr>
+                <tr>
+                    <td>Fecha y hora</td>
+                    <td><input type="datetime" name="fecha_hora" /></td>
+                </tr>
+                <tr>
+                    <td>Mes</td>
+                    <td><input type="month" name="mes" /></td>
+                </tr>
+                <tr>
+                    <td>Semana</td>
+                    <td><input type="week" name="semana" /></td>
+                </tr>
+                <tr>
+                    <td>Número (min -10, max 10): </td>
+                    <td><input type="number" name="numero" min="-10" max="10" value="0" /></td>
+                </tr>
+                <tr>
+                    <td>Teléfono</td>
+                    <td><input type="tel" name="telefono" /></td>
+                </tr>
+                <tr>
+                    <td>Término de búsqueda</td>
+                    <td><input type="search" name="busqueda" /></td>
+                </tr>
+                <tr>
+                    <td>Color favorito</td>
+                    <td> <input type="color" name="color" /></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td> <input type="submit" value="Enviar" /></td>
+                </tr>
+            </tfoot>
+        </form>
+    </table>
 
-        <p>
-            Correo electrónico: <input type="email" name="email" required />
-        </p>
 
-        <p>
-            URL: <input type="url" name="url" placeholder="Escribe la URL de tu página web personal" />
-        </p>
-
-        <p>
-            Fecha: <input type="date" name="fecha" />
-        </p>
-
-        <p>
-            Tiempo: <input type="time" name="tiempo" />
-        </p>
-
-        <p>
-            Fecha y hora: <input type="datetime" name="fecha_hora" />
-        </p>
-
-        <p>
-            Mes: <input type="month" name="mes" />
-        </p>
-
-        <p>
-            Semana: <input type="week" name="semana" />
-        </p>
-
-        <p>
-            Número (min -10, max 10): <input type="number" name="numero" min="-10" max="10" value="0" />
-        </p>
-
-        <p>
-            Teléfono: <input type="tel" name="telefono" />
-        </p>
-
-        <p>
-            Término de búsqueda: <input type="search" name="busqueda" />
-        </p>
-
-        <p>
-            Color favorito: <input type="color" name="color" />
-        </p>
-
-        <p>
-            <input type="submit" value="Enviar" />
-        </p>
-    </form>
 </body>
 
 </html>

@@ -9,108 +9,108 @@
 </head>
 
 <body>
-        <nav class="menu">
-                <ul>
-                  <li><a href="#">Inicio</a></li>
-                  <li><a href="#">Modelos</a></li>
-                  <li><a href="#">Personalización</a></li>
-                  <li><a href="#">Sobre nosotros</a></li>
-                  <li><a href="#">Contacto</a></li>
-                </ul>
-              </nav>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Modelos</a></li>
+            <li><a href="#">Personalización</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
 
     <h1>Formulario de registro </h1>
 
     <table>
-        <thead>
-            <tr>
-                <td>Nombre</td>
-                <td><input type="text" name="nombre" autofocus required autocomplete="off" placeholder="Indica tu primer nombre" /></td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <tr>
-                <td>Elija su foto de perfil</td>
-                <td><input type="file" id="avatar" name="avatar" input accept="file_extension|audio/*|video/*|image/*|media_type"></td>
-            </tr>
-            <tr>
-                <td>Correo electrónico</td>
-                <td><input type="email" name="email" required /></td>
-            </tr>
-            <tr>
-                <td>Contraseña</td>
-                <td><input type="password" minlength="8" pattern="[a-z][0-9]"></td>
-            </tr>
-            <tr>
-                <td>Lugar de nacimiento</td>
-                <td><input list="Lugar de nacimiento" placeholder="Indica su lugar de nacimiento"></td>
-            </tr>
-            <tr>
-                <td>URL</td>
-                <td><input type="url" name="url" placeholder="Escribe la URL de tu página web personal" /></td>
-            </tr>
-            <tr>
-                <td>Fecha</td>
-                <td><input type="date" name="fecha" /></td>
-            </tr>
-            <tr>
-                <td>Tiempo</td>
-                <td><input type="time" name="tiempo" /></td>
-            </tr>
-            <tr>
-                <td>Fecha y hora</td>
-                <td><input type="datetime" name="fecha_hora" /></td>
-            </tr>
-            <tr>
-                <td>Mes</td>
-                <td><input type="month" name="mes" /></td>
-            </tr>
-            
-               <tr> <td>Semana</td>
-                <td><input type="week" name="semana" /></td></tr>
-            
-            <tr>
-                <td>Número (min -10, max 10)</td>
-                <td><input type="number" name="quantity" min="0" max="10"></td>
-            </tr>
-            <tr>
-                <td>Teléfono</td>
-                <td><input type="tel" name="telefono" /></td>
-            </tr>
-            <tr>
-                <td>Término de búsqueda</td>
-                <td><input type="search" name="busqueda" /></td>
-            </tr>
-            <tr>
-                <td>Color favorito</td>
-                <td><input type="color" name="color" /></td>
-            </tr>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td><input type="submit" value="Enviar" /></td>
-            </tr>
-        </tfoot>
+        <form action="" method="get">
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" name="nombre" autofocus required autocomplete="off" placeholder="Indica tu primer nombre" /></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <tr>
+                    <td>Elija su foto de perfil</td>
+                    <td><input type="file" id="avatar" name="avatar" input accept="file_extension|audio/*|video/*|image/*|media_type"></td>
+                </tr>
+                <tr>
+                    <td>Correo electrónico</td>
+                    <td><input type="email" name="email" required /></td>
+                </tr>
+                <tr>
+                    <td>Contraseña</td>
+                    <td><input type="password" minlength="8" pattern="[a-z][0-9]"></td>
+                </tr>
+                <tr>
+                    <td>Lugar de nacimiento</td>
+                    <td><input list="Lugar de nacimiento" placeholder="Indica su lugar de nacimiento"></td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td><input type="url" name="url" placeholder="Escribe la URL de tu página web personal" /></td>
+                </tr>
+                <tr>
+                    <td>Fecha</td>
+                    <td><input type="date" name="fecha" /></td>
+                </tr>
+                <tr>
+                    <td>Tiempo</td>
+                    <td><input type="time" name="tiempo" /></td>
+                </tr>
+                <tr>
+                    <td>Fecha y hora</td>
+                    <td><input type="datetime" name="fecha_hora" /></td>
+                </tr>
+                <tr>
+                    <td>Mes</td>
+                    <td><input type="month" name="mes" /></td>
+                </tr>
+
+                <tr>
+                    <td>Semana</td>
+                    <td><input type="week" name="semana" /></td>
+                </tr>
+
+                <tr>
+                    <td>Número (min -10, max 10)</td>
+                    <td><input type="number" name="quantity" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Teléfono</td>
+                    <td><input type="tel" name="telefono" /></td>
+                </tr>
+                <tr>
+                    <td>Término de búsqueda</td>
+                    <td><input type="search" name="busqueda" /></td>
+                </tr>
+                <tr>
+                    <td>Color favorito</td>
+                    <td><input type="color" name="color" /></td>
+                </tr>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><input type="submit" value="Enviar" /></td>
+                </tr>
+            </tfoot>
+        </form>
     </table>
 
 
-    <form action="" method="get">
-
-
-        <datalist id="Lugar de nacimiento">
-            <option value="Sevilla">
-            <option value="Huelva">
-            <option value="Córdoba">
-            <option value="Jaen">
-            <option value="Granada">
-        </datalist>
 
 
 
+    <datalist id="Lugar de nacimiento">
+        <option value="Sevilla">
+        <option value="Huelva">
+        <option value="Córdoba">
+        <option value="Jaen">
+        <option value="Granada">
+    </datalist>
 
-    </form>
 </body>
 
 </html>
