@@ -41,11 +41,18 @@
                 </tr>
                 <tr>
                     <td>Contraseña</td>
-                    <td><input type="password" minlength="8" pattern="[a-z][0-9]"></td>
+                    <td><input type="password" minlength="8" pattern="[0-9][A-Z]"></td>
                 </tr>
                 <tr>
                     <td>Lugar de nacimiento</td>
                     <td><input list="Lugar de nacimiento" placeholder="Indica su lugar de nacimiento"></td>
+                    <datalist id="Lugar de nacimiento">
+                            <option value="Sevilla">
+                            <option value="Huelva">
+                            <option value="Córdoba">
+                            <option value="Jaen">
+                            <option value="Granada">
+                        </datalist>
                 </tr>
                 <tr>
                     <td>URL</td>
@@ -103,13 +110,7 @@
 
 
 
-    <datalist id="Lugar de nacimiento">
-        <option value="Sevilla">
-        <option value="Huelva">
-        <option value="Córdoba">
-        <option value="Jaen">
-        <option value="Granada">
-    </datalist>
+
 
 </body>
 
