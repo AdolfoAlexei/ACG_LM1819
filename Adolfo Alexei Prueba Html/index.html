@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Prueba HTML Adolfo Alexei Catalán García</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1, h3, h4, h5{
+            font-weight: bold;
+            font-size: 40px;
+        }
+        .enlaces {
+            background-color: yellow;
+        }
+
+        .listadeenlaces {
+            color: darkgoldenrod;
+            text-align: center;
+        }
+
+        .enlacemorado {
+            color: darkmagenta;
+        }
+
+        .enlaceverde {
+            color: green;
+        }
+
+        .enlacerojo {
+            color: red;
+        }
+        #captioninferior {
+            font-weight: bold;
+    caption-side: bottom;
+    font-size: 14px;  
+  }
+
+  .tituloazul {
+      background-color: blue;
+      color:white;
+      height: 60px;
+      display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .oscuro {
+      background-color: rgb(63, 63, 63);
+      float: left;
+      width: 70%;
+      height: 300px;
+  }
+
+  .claro {
+      background-color: grey;
+      float: right;
+      width: 30%;
+      height: 300px;
+  }
+
+  .divverde {
+      padding: 0;
+      margin: auto;
+      text-align: center;
+      margin-top: 3px;
+      background-color: green;
+      border: 2px solid black;
+      width: 70%;
+      height: 20%;
+  }
+
+  .divazul {
+      padding: 0;
+      margin: auto;
+      text-align: center;
+      margin-top: 3px;
+      background-color: rgb(26, 51, 161);
+      border: 2px solid black;
+      width: 70%;
+      height: 20%;
+  }
+
+
+ 
+
+        
+    </style>
+</head>
+
+<body>
+    <p>Desarrolla solo un documento web con todos los apartados que se indican:</p>
+
+    <h1>Párrafos con estilos diferentes</h1>
+
+    <p><em>Texto enfatizado</em></p>
+    <p><b>Texto en negrita</b> </p>
+    <p>
+        <dl>Texto definición</dl>
+    </p>
+    <p><code>Texto código fuente de ordenador</code></p>
+    <p><code>Texto ejemplo de código fuente de ordenador</code></p>
+    <p><tt>Texto de teclado</tt></p>
+    <p><var>Variable</var></p>
+    <p>En esta línea se muestra un <s>texto tachado</s> y se simula <u>una correción</u> </p>
+    <p><cite>Esto es una cita Cita</cite> </p>
+    <p><strong>Este texto es más grande</strong> <small>y este texto más pequeño</small></p>
+    <p>En esta línea tenemos <sup>texto en superíndice</sup> y <sub>texto en subíndice</sub> </p>
+    <p>
+        <pre>          El texto es una etiqueta 'pre' mantiene los espacios    y 
+saltos de línea </pre>
+    </p>
+
+    <div class="enlaces">
+        <h2 class="listadeenlaces">Lista de enlaces</h2>
+        <ul>
+            <li>Buscadores</li>
+
+            <ul>
+                <li><a class="enlacemorado" href="https://www.bing.com/?setlang=es">Bing</a></li>
+                <li><a class="enlaceverde" href="https://www.google.es">Google</a></li>
+            </ul>
+        </ul>
+        <ul>
+            <li>Redes sociales</li>
+
+            <ul>
+                <li><a class="enlacerojo" href="https://es-es.facebook.com">Facebook</a></li>
+                <li><a class="enlacerojo" href="https://twitter.com">Twitter</a></li>
+            </ul>
+        </ul>
+    </div>
+
+
+    <h3>Encabezado izquierda</h3>
+
+    <p><img class="imagenleft" src="../Assets/playa.PNG" align="left">La música, es según la definición tradicional del
+        término,
+        el arte de organizar sensible y lógicamente una combinación coherente de sonidosy silencios utilizando los
+        principios
+        fundamentales de la melodía, la armonía...........</p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h4>Formulario</h4>
+    <table>
+        <form action="" method="get">
+            <caption id="captioninferior">Los datos personales facilitados son suceptibles de cesión cuando esta sea
+                precisa
+                para tramitar su contestación
+            </caption>
+            <thead>
+                <tr>
+                    <td>Asunto:</td>
+                    <td><input type="text" name="nombre" autofocus required autocomplete="off" /></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>*Primer apellido:</td>
+                    <td><input type="text" name="nombre" autofocus required autocomplete="off" /></td>
+                </tr>
+                <tr>
+                    <td>Segundo apellido:</td>
+                    <td><input type="text" name="nombre" autofocus required autocomplete="off" /></td>
+                </tr>
+                <tr>
+                    <td>Nombre:</td>
+                    <td><input type="text" name="nombre" autofocus required autocomplete="off" /></td>
+                </tr>
+                <tr>
+                    <td>DNI /Pasaporte/N.I.E</td>
+                    <td><input type="text" name="nombre" autofocus required autocomplete="off" /></td>
+                </tr>
+                <tr>
+                    <td> Correo electrónico:</td>
+                    <td> <input type="email" name="email" required /></td>
+                </tr>
+                <tr>
+                    <td>Teléfono:</td>
+                    <td><input type="tel" name="telefono" /></td>
+                </tr>
+                <tr>
+                    <td>¿Sobre qué?:</td>
+                    <td><input list="sobreque" </td> <datalist id="sobreque">
+                        <option value="Trámite económico">
+                        <option value="Trámite sobre renovación">
+                        <option value="Trámite sobre pérdida de datos">
+                            </datalist>
+                </tr>
+                <tr>
+                    <td>¿Qué va a escribir?:</td>
+                    <td><input list="escritura" </td> <datalist id="escritura">
+                        <option value="Reclamación">
+                        <option value="Petición">
+                        <option value="Queja">
+                        <option value="Consejo">
+                            </datalist>
+                </tr>
+                <tr>
+                    <td>*Texto del escrito:</td>
+                    <td><textarea name="Textodelescrito" title="Textodelescrito" rows="3" cols="40"></textarea></td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td> <input type="submit" value="Enviar" /></td>
+                </tr>
+            </tfoot>
+
+        </form>
+    </table>
+
+    <h5>Capas</h5>
+    <div class="tituloazul">TÍTULO DE LA PÁGINA</div>
+    <div class="oscuro">oscuro
+        <div class="divverde">CAPA 1</div>
+        <div class="divverde">CAPA 2</div>
+        <div class="divverde">CAPA 3</div>
+        <div class="divverde">CAPA 4</div>
+    </div>
+    <div class="claro">claro
+            <div class="divazul">CAPA 5</div>
+            <div class="divazul">CAPA 6</div>
+    </div>
+
+</body>
+
+</html>
