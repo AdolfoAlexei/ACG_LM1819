@@ -4,11 +4,32 @@
 }
 
 h1 {
-    font: bold 20px verdana, sans-serif;
+    font: bold 40px verdana, sans-serif;
+    color: rgb(149, 25, 32); 
+    padding: 4px;
+}
+
+#logo {
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    float: left
 }
 
 h2 {
-    font: bold 16px verdana, sans-serif;
+    font: bold 10px verdana, sans-serif;
+    color: rgb(36, 22, 22);
+    padding: 10px;
+}
+
+h3 {
+    font: bold 26px verdana, sans-serif;
+}
+
+#heartimg {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 740px
 }
 
 header, section, footer, aside, nav, article {
@@ -20,7 +41,7 @@ body {
 }
 
 #contenedor {
-    width: 960px;
+    width: 1000px;
     margin: 15px auto;
     text-align: left;
 }
@@ -32,27 +53,32 @@ body {
 }
 #menu {
     background: #a7cfe6;
-    padding: 5px 15px;
+    padding: 0px 15px;
 }
 
 #menu li {
     display: inline-block;
     list-style: none;
-    padding: 5px;
+    padding: 10px;
+    border-right: 1px solid#71aed1;
 }
 
 #seccion {
     float: left;
-    width: 660px;
+    width: 800px;
     margin: 20px;
 }
 
 #columna {
     float: left;
-    width: 220px;
+    width: 120px;
     margin: 20px 0px;
     padding: 20px;
     background: #cccccc;
+}
+
+#columna blockquote {
+    font: bold 14px verdana, sans-serif;
 }
 
 #pie {
@@ -70,3 +96,37 @@ article {
 article footer {
     text-align: center;
 }
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+	}
+ 
+	.social ul li .icon-facebook {background:#3b5998;} /* Los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-google-plus2 {background: rgb(252, 57, 57)}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-rss2{background: #d95232;}
+ 
+	.social ul li a:hover {
+		background: rgb(67, 230, 94); /* Cambiar fondo cuando el usuario pase el mouse */
+    }
+    
+    .social li {
+        display: inline-block;
+        list-style: none;
+        padding: 1px;
+    }
+

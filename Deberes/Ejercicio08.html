@@ -7,14 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 08 HTML</title>
     <link rel="stylesheet" href="../Assets/ejercicio08.css">
+    <link rel="stylesheet" href="../Assets/fonts.css">
+
 </head>
 
 <body>
     <div id="contenedor">
         <header id="cabecera">
+            <img id="logo" src="../Assets/logo.png" alt="logo">
             <h1>Página web personal</h1>
+            <h2>Desarrollo web, posicionamiento CEO y nuevas tecnologías.</h2>
         </header>
-        
+
         <nav id="menu">
             <ul>
                 <li>Inicio</li>
@@ -23,31 +27,41 @@
                 <li>Contacto</li>
             </ul>
         </nav>
-        
+
         <section id="seccion">
             <article>
                 <header>
-                    <h2>Título del Artículo</h2>
+                    <h3>Como protegerse de Heartbleed</h3>
                 </header>
-                Texto del artículo. Texto del artículo. Texto del artículo. 
-                <footer>26/11/2018</footer>
+                <img id="heartimg" src="../Assets/heartbleed.png" alt="heartbleed" /> <br />
+                Heartbleed, o CVE-2014-0160 es un gravísimo fall de seguridad que afecta a todo el mundo de una u otra
+                manera. <br />
+                Se dice que es el fallo más importante de los últimos tiempos y tanto si te interesa la seguridad como
+                si no, deberías <br />
+                preocuparte. Te explico de qué va el tema, por qué debes preocuparte.
             </article>
-            <article>
-                <header>
-                    <h2>Título del Artículo</h2>
-                </header>
-                Texto del artículo. Texto del artículo. Texto del artículo. 
-                <footer>26/11/2018</footer>
-            </article>
-        </section>
-        
-        <aside id="columna">
-            <blockquote>Mensaje 1</blockquote>
-        </aside>
 
-        <footer id="pie">
-            Todos los derechos reservados para IES
-        </footer>
+        </section>
+
+        <aside id="columna">
+            <blockquote>Sígueme</blockquote>
+        </aside>
+        <aside>
+                <div class="social">
+                        <ul>
+                            <li><a href="http://www.facebook.com/" target="_blank" class="icon-facebook"></a></li>
+                            <li><a href="http://www.twitter.com/" target="_blank" class="icon-twitter"></a></li>
+                            <li><a href="http://www.googleplus.com/" target="_blank" class="icon-google-plus2"></a></li>
+                            <li><a href="http://www.pinterest.com/" target="_blank" class="icon-pinterest"></a></li>
+                            <li><a href="http://www.feedly.com/" target="_blank" class="icon-rss2"></a></li>
+                        </ul>
+                    </div>
+            </aside>
+
+    <footer id="pie">
+        Información acerca de la vulnerabilidad
+    </footer>
     </div>
 </body>
+
 </html>
