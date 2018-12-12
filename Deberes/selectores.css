@@ -1,0 +1,98 @@
+/* Selector Universal, aplica el estilo a todos los elementos de la página */
+
+* {}
+
+########################################################################################################################################################################
+
+/* Selector de tipo o etiqueta, se debe indicar la etiqueta sobre la cual se aplican los estilos */
+/* Para aplicar los estilo a varias etiquetas, se pueden encadenar usando comas*/ 
+
+p {}
+
+h1 {}
+
+h1, h2, h3 {}
+
+p, .aviso {} /* A los elementos p y los que tienen la clase aviso */
+
+########################################################################################################################################################################
+
+/* Selector descendente, para seleccionar los elementos que están dentro de otros elementos, sin tener que ser hijo directo y pudiendo haber
+otras etiquetas de por medio */
+
+p span {}
+
+p div .articulo {}
+
+########################################################################################################################################################################
+
+/* Un caso especial es combinar dicho selector con el selector universal, ejemplo: p * a {}, aplicándose a todos los elementos a que se encuentren dentro de
+un elemento que a su vez esté dentro de un elemento tipo p. Si a está a continuación de p sin elemento de por medio, no se aplican los cambios.
+
+########################################################################################################################################################################
+
+/* Selector de clase, mediante el uso del atributo "class" a las etiquetas. Con este selector, varios elementos pueden usar el msmo valor, a diferencia
+del uso con "ID". Si se aplica el mismo valor a varias etiquetas, podemos especificar sobre cual se aplican los cambios; ejemplo, usar la class "rojo" para 
+párrafos y divs, y queremos que solo se apliquen cambios en p, pues usariaos p.rojo {} */
+
+.parrafo {}
+
+########################################################################################################################################################################
+
+/* Selectores ID, tienen un valor único, no se pueden repetir, por eso se usa para elementos específicos */
+
+########################################################################################################################################################################
+
+/* Selector de hijo, se utiliza para seleccionar un elemento que es hijo directo de otro elemento, sin haber otros elementos de por medio. Se usa el ">" */
+
+p > span {}
+
+########################################################################################################################################################################
+
+/* Selector adyacente, se utiliza el símbolo "+", deben cumplirse dos condiciones: elemento1 y elemento2 deben ser hermanos, es decir, tener el mismo padre;
+y el elemento2 debe aparecer inmediatamente después del elemento1 */
+
+h1 + h2 {} /* Los cambios se aplican a h1 y h2 pero no en el h2 segundo llamado "Subtitulo aparte" */
+
+/* Código html de ejemplo */
+
+<body>
+<h1>Titulo</h1>
+<h2>Subtitulo</h2>
+<h2>Subtitulo aparte</h2>
+</body>
+
+########################################################################################################################################################################
+
+/* Selector de atributos, existen 4: */
+
+[nombre_atributo]
+
+a[class] {} /* Los cambios se aplican a los enlaces que tengan un atributo "class" independientemente de su valor. */
+
+
+[nombre_atributo=valor]
+
+a[class="externo"] {} /* Los cambios se aplican a los enlaces cuya clase tenga el valor "externo" */
+a[href="http://www.facebook.com"] {} /* Los cambios se aplican a todos los enlaces que apunten a facebook */
+*[lang=en] /* Selecciona todos los elementos de la pagina cuyo atributo "lang" sea igual a "en" */
+
+
+[nombre_atributo~=valor]
+
+a[class~="externo"] {} /* Los cambios se aplican a todos los enlaces que tengan un atributo "class" en el que al menos uno de sus valores sea "externo" */
+
+
+[nombre_atributo|=valor]
+
+*[lang|= "es"] {} /* Selecciona todos los elementos de la pagina cuyo atributo "lang" empiece por "es". */
+
+
+
+
+
+
+
+
+
+
