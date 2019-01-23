@@ -1,0 +1,37 @@
+<!-- Mostrar autores cuyos libros tienen menos de 200 paginas -->
+for $libro in //Libros/libro
+where $libro/NumPaginas<200
+return $libro/Autores
+
+<!-- Mostrar todos los bailes cuya sala sea la 1 -->
+for $baile in //Bailes/baile
+where $baile/sala=1
+return $baile/nombre
+
+<!-- -->
+for $baile in //Bailes/baile
+let $n :=baile/nombre
+where $baile/sala=1
+return data ($n)
+
+<!-- Mostrar bailes cuya sala sea la 2 y el precio inferior a 35 euros -->
+for $baile in //Bailes/baile
+let $n :=$baile/nombre
+where $baile/sala=2 and $baile/precio<35
+and $baile/precio [@moneda='euro']
+return $n
+
+<!-- Nombre de los profesores que dan clase con cuota trimestral -->
+for $baile in //Bailes/baile
+let $n :=baile/profesor
+where $baile/precio [@cuota='trimestral']
+return $n
+
+<!-- Obtener todos los titulos de los libros de la biblioteca -->
+for $biblioteca in //biblioteca/libros/libro
+let $n :=$biblioteca/titulo
+return $n
+
+<!-- Obtener todos los titulos de los libros de la biblioteca junto sus autores -->
+for $biblioteca in //biblioteca/libros/libro
+return ($biblioteca/titulo, $biblioteca/autor)

@@ -1,0 +1,288 @@
+Mostrar el baile, profesor y plazas
+##########################################################################################
+<html>
+<body>
+<h1>Bailes Ofertados</h1>
+<table style="border: 1px solid black">
+<tr>
+	<th>Nombre</th>
+	<th>Profesor</th>
+	<th>Plazas</th>
+</tr>
+{
+for $baile in //Bailes/baile
+let $nombre:=$baile/nombre
+let $profesor:=$baile/profesor
+let $plazas:=$baile/plazas
+return
+	<tr>
+		<td>{data($nombre)}</td>
+		<td>{data($profesor)}</td>
+		<td>{data($plazas)}</td>	
+	</tr>
+}
+</table>
+</body>
+</html>
+##########################################################################################
+Mostrar bailes con cuota trimestral y ordenador de mayor a menor en funcion de las plazas
+##########################################################################################
+<html>
+<body>
+<h1>Bailes Ofertados</h1>
+<table style="border: 1px solid black">
+<tr>
+	<th>Nombre</th>
+	<th>Profesor</th>
+	<th>Plazas</th>
+</tr>
+{
+for $baile in //Bailes/baile
+let $nombre:=$baile/nombre
+let $profesor:=$baile/profesor
+let $plazas:=$baile/plazas
+where $baile/precio[@cuota="trimestral"]
+order by $baile/plazas descending
+return
+	<tr>
+		<td>{data($nombre)}</td>
+		<td>{data($profesor)}</td>
+		<td>{data($plazas)}</td>	
+	</tr>
+}
+</table>
+</body>
+</html>
+##########################################################################################
+Añadir datos a la base de datos (en before podemos poner after para que vaya antes o despues)
+##########################################################################################
+insert node 
+<baile id="7">
+<nombre>Foxtrot</nombre>
+<precio cuota="mensual" moneda="dolares">22</precio>
+<plazas>12</plazas>
+<comienzo>01/01/2020</comienzo>
+<fin>01/03/2020</fin>
+<profesor>Freddy</profesor>
+<sala>3</sala>
+</baile>
+before //Bailes/baile[1]
+##########################################################################################
+Reemplazar datos del nodo
+##########################################################################################
+replace value of node //Bailes/baile[1]/profesor
+with "Profe"
+,
+replace value of node //Bailes/baile[1]/plazas
+with 200
+##########################################################################################
+Reemplazar datos del nodo a partir de un id
+##########################################################################################
+replace value of node  //Bailes/baile[@id='7']/profesor
+with "Profeeee"
+,
+replace value of node //Bailes/baile[@id='7']/plazas
+with 200000
+##########################################################################################
+Borrar nodo
+##########################################################################################
+delete node //Bailes/baile[@id='7']
+##########################################################################################
+Obtener los titulos de los titulos prestados prestados ordenados por la fecha de inicio de prestamo
+##########################################################################################
+for $t in doc("Biblioteca.xml")//Libro,
+$e in doc("Prestamos.xml")//entrada
+where $t/titulo = $e/titulo
+order by $e/prestamo/inicio
+##########################################################################################
+Mostrar los titulos de los libros con la etiqueta titulo.
+##########################################################################################
+for $titulo in /bookstore/book/title/text()
+return <titulo>{$titulo}</titulo>​​
+##########################################################################################
+Mostrar los libros cuyo precio sea menor o igual a 30
+##########################################################################################
+for $libro in /bookstore/book
+where $libro/price <= 30
+return $libro
+##########################################################################################
+Mostrar los libros cuyo precio sea menor o igual a 30 alternativa
+##########################################################################################
+for $libro in /bookstore/book[price<=30]
+return $libro
+##########################################################################################
+Mostrar sólo el título de los libros cuyo precio sea menor o igual a 30.
+##########################################################################################
+for $libro in /bookstore/book
+where $libro/price <= 30
+return $libro/title
+##########################################################################################
+Mostrar sólo el título de los libros cuyo precio sea menor o igual a 30 alternativa
+##########################################################################################
+for $libro in /bookstore/book[price<=30]
+return $libro/title
+##########################################################################################
+Mostrar sólo el título sin atributos de los libros cuyo precio sea menor o igual a 30.
+##########################################################################################
+for $libro in /bookstore/book[price<=30]
+return <title>{$libro/title/text()}</title>
+##########################################################################################
+Mostrar el título y el autor de los libros del año 2005, y etiquetar cada uno de ellos con "lib2005".
+##########################################################################################
+for $libro in /bookstore/book
+where $libro/year=2005
+return <lib2005>{$libro/title,$libro/author}</lib2005>
+##########################################################################################
+Mostrar el título y el autor de los libros del año 2005, y etiquetar cada uno de ellos con "lib2005" alternativa		
+##########################################################################################
+for $libro in /bookstore/book
+where $libro/year=2005
+return <lib2005>{$libro/title}{$libro/author}</lib2005>
+##########################################################################################
+Mostrar los libros ordenados primero por "category" y luego por "title" en una sola consulta.	
+##########################################################################################
+for $libro in /bookstore/book
+order by $libro/@category,$libro/title
+return $libro
+##########################################################################################
+Mostrar cuántos libros hay, y etiquetarlo con "total".
+##########################################################################################
+let $num_libro := count(/bookstore/book)
+return <total>{$num_libro}</total>
+##########################################################################################
+Mostrar los títulos de los libros y al final una etiqueta con el número total de libros.
+##########################################################################################
+let $total := count (/bookstore/book),
+    $titulos := (
+      for $libro in /bookstore/book/title 
+      return <titulo>{$libro/text()}</titulo>) 
+return 
+      <resultado>
+        {$titulos}
+        <total_libros>{$total}</total_libros>
+      </resultado>
+##########################################################################################
+Mostrar el precio mínimo y máximo de los libros.
+##########################################################################################
+let $max := max(/bookstore/book/price), 
+    $min := min(/bookstore/book/price)
+return
+<resultado>
+<max>{$max}</max>
+<min>{$min}</min>
+</resultado>
+
+##########################################################################################
+Mostrar el título y el número de autores que tiene cada libro en etiquetas diferentes
+##########################################################################################
+for $libro in /bookstore/book
+return <resultado>{$libro/title}{$libro/author}</resultado>
+##########################################################################################
+Mostrar cada uno de los precios de los libros, y al final una nueva etiqueta con la suma de los precios (Función sum())
+##########################################################################################
+let $total := count (/bookstore/book/price),
+    $precio := (
+      for $precio in /bookstore/book/price
+      return <Valor>{$precio/text()}</Valor>) 
+return 
+      <resultado>
+        {$precio}
+        <total_precio>{sum($precio)}</total_precio>
+      </resultado>
+
+##########################################################################################
+Mostrar el título del libro, su precio y su precio con el IVA incluido, cada uno con su propia etiqueta. Ordénalos por precio con IVA.
+##########################################################################################
+for $libro in /bookstore/book
+let $precio_iva := ($libro/price * 1.21)
+order by $precio_iva
+return 
+<libro>
+  <titulo>{$libro/title/text()}</titulo>
+  <precio>{$libro/price/text()} €</precio>
+  <precio_iva>{$precio_iva} €</precio_iva>
+</libro>
+
+##########################################################################################
+Mostrar la suma total de los precios de los libros con la etiqueta "total".
+##########################################################################################
+let $libros := /bookstore/book
+return <total>{sum($libros/price)}</total>
+
+##########################################################################################
+Mostrar los libros escritos en años que terminen en "3".
+##########################################################################################
+for $libros in /bookstore/book
+where ends-with($libros/year, "3")
+return $libros
+
+##########################################################################################
+Mostrar los libros cuya categoría empiece por "C".
+##########################################################################################
+for $libros in /bookstore/book
+where starts-with($libros/@category, "C")
+return $libros
+
+for $libros in /bookstore/book[starts-with(@category, "C")]
+return $libros
+
+##########################################################################################
+Mostrar los libros que tengan una "X" mayúscula o minúscula en el título.
+##########################################################################################
+for $libros in /bookstore/book
+where contains(lower-case($libros/title), "t")
+return $libros
+
+##########################################################################################
+Mostrar todos los autores eliminando los que se repiten y ordenados por el número de caracteres que tiene cada autor.
+##########################################################################################
+for $autores in distinct-values(/bookstore/book/author)
+order by string-length($autores)
+return <autor>{$autores}</autor>
+
+##########################################################################################
+Mostrar los nombres de los profesores y la sala en la que dan clase, ordénalos por sala.
+##########################################################################################
+for $baile in /bailes/baile
+order by $baile/sala
+return 
+   <baile>
+      {$baile/profesor}
+      {$baile/sala}
+   </baile>
+
+
+##########################################################################################
+Mostrar la media de los precios de todos los bailes.
+##########################################################################################
+let $baile := /bailes/baile
+return <media>{avg($baile/precio)}</media>
+
+##########################################################################################
+Mostrar los nombres de los profesores eliminando los repetidos y acampañar cada nombre 
+con todas las salas en la que da clase, ordénalos por nombre.
+##########################################################################################
+for $profesor in distinct-values(/bailes/baile/profesor)
+let $salas := /bailes/baile[profesor=$profesor]/sala
+order by $profesor
+return 
+   <profesores>
+     <nombre>{$profesor}</nombre>
+     {$salas}
+   </profesores>
+
+
+##########################################################################################
+Mostrar la suma de los precios de los bailes de la sala 1.
+##########################################################################################
+let $baile := /bailes/baile[sala=1]
+return <total_sala_1>{sum($baile/precio)}</total_sala_1>
+
+
+##########################################################################################
+Mostrar en una tabla de HTML los nombres de los bailes y su profesor, cada uno en una fila.
+##########################################################################################
+<table> {
+  for $baile in /bailes/baile
+  return <tr><td>{$baile/nombre/text()}</td><td>{$baile/profesor/text()}</td></tr>
+} </table>
