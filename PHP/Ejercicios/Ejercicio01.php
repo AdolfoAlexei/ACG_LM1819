@@ -10,26 +10,26 @@
         color: red; 
     }
     .azul {
-        color=azul;
+        color: blue;
     }
     .verde {
-        color=verde;
+        color: green;
     }
 
     
     </style>
 </head>
 <body>
-<?php
-      $numero=rand(1,10);
-      echo $numero ;
-      if ($numero < 5) {
-        echo '<p class="rojo">El valor es menor que 5</p>'
-    } elseif ($numero > 5 ) {
-        echo '<p class="azul">El valor es mayor que 5</p>'
-    } else ($numero = 5) {
-        echo '<p class="verde">El valor es igual a 5</p>';
 
+      <?php
+      $numero=rand(1,10);
+     echo $numero;
+     if ($numero < 5) {
+        echo '<p class="rojo">El valor es menor que 5</p>';
+    } elseif ($numero > 5) {
+        echo '<p class="azul">El valor es mayor que 5</p>';
+    } else
+        echo '<p class="verde">El valor es igual a 5</p>';
     ?>
 </body>
 </html>
