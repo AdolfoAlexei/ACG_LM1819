@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="resultado.php" enctype="multipart/form-data" method="post">
+        <p><label>Nombre</label><input type="text" name="nombre"></p>
+        <p><label>Pass: </label><input type="password" name="clave"></p>
+        <p><label>Descripcion: </label><textarea rows="5" cols="10" name="descrip">Esta es la descripcion</textarea></p>
+        <p><input type="checkbox" name="opcion" value="Enviado">Debe marcarse para enviarse el formulario</p>
+        <p>
+            <input type="radio" name="datos" value="66">Datos 1
+        </p>
+        <p>
+            <input type="radio" name="datos" value="77">Datos 2
+        </p>
+
+        <select name="seleccion[]" multiple="multiple">
+            <option value="Primera">Primera opcion</option>
+            <option value="Segunda">Segunda opcion</option>
+        </select>
+
+        <p><label>Fichero:</label><input type="file" name="fichero"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+
+</html>
