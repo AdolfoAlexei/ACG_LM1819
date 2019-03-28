@@ -25,3 +25,9 @@
     </form>
 </body>
 </html>
+
+nombre de la base de datos: bd.php
+Dentro tendremos una tabla de ordenadores con idordenador(clave primaria), marca, procesador, memoria, perifericos(1 si tiene o 0 si no tiene), precio, fecha de cpmpra 
+y ubicacion (clave foranea).
+
+En ubicaciones debemos tener el idUbicacion, nombre, descripcion y localizacion(maps).
