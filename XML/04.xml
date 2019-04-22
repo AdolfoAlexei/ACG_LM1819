@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bliblioteca>
+  <Categorías>
+    <Historia>
+      <Prehistoria>
+        <Título lan="es">El largo camino dela humanidad</Título>
+        <Autor>VICTOR M. FERNANDEZ MARTINEZ</Autor>
+        <Editorial>ALIANZA EDITORIAL</Editorial>
+        <Año_Edición>2014</Año_Edición>
+        <ISBN>9788420688626</ISBN>
+      </Prehistoria>
+      <Edad_Media>
+        <Título lan="es">Historia universal de la Edad Meedia</Título>
+        <Autor>VICENTE ANGEL ALVAREZ PALENZUELA</Autor>
+        <Editorial>ARIEL</Editorial>
+        <Año_Edición>2013</Año_Edición>
+        <ISBN>9788434406414</ISBN>
+      </Edad_Media>
+      <Edad_Contemporánea>
+        <Título lan="es">Edad Edad_Contemporánea II</Título>
+        <Autor>COMISIÓN ESPAÑOLA DE Hª MILITAR Y LA ACADEMIA DE LA Hª
+        </Autor>
+        <Editorial>MINISTERIO DE DEFENSA. CENTRO DE PUBLICACIONES</Editorial>
+        <Año_Edición>2013</Año_Edición>
+        <ISBN>9788490911297</ISBN>
+      </Edad_Contemporánea>
+    </Historia>
+    <Novela_Negra>
+      <Más_Buscado>
+        <Título lan="es">Origen</Título>
+        <Autor>DAN BROWN</Autor>
+        <Editorial>PLANETA</Editorial>
+        <Año_Edición>2013</Año_Edición>
+        <ISBN>9788408177081</ISBN>
+      </Más_Buscado>
+      <Más_Buscado_2>
+        <Título lan="es">El psiquiatra</Título>
+        <Autor>ARNOLD STROBEL</Autor>
+        <Editorial>PAMIES</Editorial>
+        <Año_Edición>2012</Año_Edición>
+        <ISBN>9788415433057</ISBN>
+      </Más_Buscado_2>
+      <Novedad>
+        <Título lan="es">Ausencias</Título>
+        <Autor>CARLOS SAURA</Autor>
+        <Editorial>OPORTET</Editorial>
+        <Año_Edición>2017</Año_Edición>
+        <ISBN>9788494663819</ISBN>
+      </Novedad>
+    </Novela_Negra>
+    <Novela_Romántica>
+      <Más_Buscado>
+        <Título lan="es">No te enamores de mi</Título>
+        <Autor>LOLES LOPEZ</Autor>
+        <Editorial>PLANETA</Editorial>
+        <Año_Edición>2017</Año_Edición>
+        <ISBN>9788408177470</ISBN>
+      </Más_Buscado>
+      <Más_Buscado_2>
+        <Título lan="es">La tierra del sol poniente</Título>
+        <Autor>BARBARA WOOD</Autor>
+        <Editorial>PUNTO DE LECTURA</Editorial>
+        <Año_Edición>2017</Año_Edición>
+        <ISBN>9788466342001</ISBN>
+      </Más_Buscado_2>
+      <Novedad>
+        <Título lan="es">Juego de apariencias</Título>
+        <Autor>INGRID DESJOURS</Autor>
+        <Editorial>PLANETA</Editorial>
+        <Año_Edición>2017</Año_Edición>
+        <ISBN>9788408178316</ISBN>
+      </Novedad>
+    </Novela_Romántica>
+    <Economía>
+      <Más_Buscado>
+        <Título lan="es">El gran cambio</Título>
+        <Autor>FERNANDO TRIAS</Autor>
+        <Editorial>TEMAS DE HOY</Editorial>
+        <Año_Edición>2013</Año_Edición>
+        <ISBN>9788499983363</ISBN>
+      </Más_Buscado>
+      <Más_Buscado_2>
+        <Título lan="es">La gran trampa</Título>
+        <Autor>DANIEL LACALLE</Autor>
+        <Editorial>DEUSTO S.A. EDICIONES</Editorial>
+        <Año_Edición>2017</Año_Edición>
+        <ISBN>9788423428878</ISBN>
+      </Más_Buscado_2>
+      <Novedad>
+        <Título lan="es">El nuevo vivir del tranding</Título>
+        <Autor>ALEXANDER ELDER</Autor>
+        <Editorial>OBELISCO</Editorial>
+        <Año_Edición>2017</Año_Edición>
+        <ISBN>9788491112112</ISBN>
+      </Novedad>
+    </Economía>
+    <Medicina>
+      <Más_Buscado>
+        <Título lan="es">Diario de vida</Título>
+        <Autor>JUAN RAMÓN LUCAS</Autor>
+        <Editorial>ALIENTA</Editorial>
+        <Año_Edición>2017</Año_Edición>
+        <ISBN>9788416928385</ISBN>
+      </Más_Buscado>
+      <Más_Buscado_2>
+        <Título lan="es">Permiso para quejarse</Título>
+        <Autor>JORDI MONTERO</Autor>
+        <Editorial>ARIEL</Editorial>
+        <Año_Edición>2017</Año_Edición>
+        <ISBN>9788434425217</ISBN>
+      </Más_Buscado_2>
+      <Novedad>
+        <Título lan="es">El libro de la espalda</Título>
+        <Autor>FRANCISCO KOVACS</Autor>
+        <Editorial>TEMAS DE HOY</Editorial>
+        <Año_Edición>2017</Año_Edición>
+        <ISBN>9788499984827</ISBN>
+      </Novedad>
+    </Medicina>
+  </Categorías>
+</Bliblioteca>

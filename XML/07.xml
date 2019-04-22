@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ejercicio_07  xmlns:h="https://es.wikipedia.org/wiki/Bate" xmlns:k="https://es.wikipedia.org/wiki/Chiroptera">
+<h:bat>
+  <h:SIGNIFICADO>Bate</h:SIGNIFICADO>
+  <h:USO>Instrumento de deporte</h:USO>
+  <h:MATERIAL>Madera y plástico entre otros.</h:MATERIAL>
+  <h:PESO>Variable</h:PESO>
+  <h:PROPIEDADES>Duro y liso</h:PROPIEDADES>
+</h:bat>
+
+<k:bat>
+  <k:SIGNIFICADO>Murciélago</k:SIGNIFICADO>
+  <k:ORDEN>Chiroptera</k:ORDEN>
+  <k:VARIEDAD>Unas 1100 especies.</k:VARIEDAD>
+  <k:DISTRIBUCIÓN>Ocupan el 20 % de todas las especies de mamíferos.</k:DISTRIBUCIÓN>
+  <k:TAMAÑO>De 29mm a 1.5 metros.</k:TAMAÑO>
+  <k:PESO>de 2 g a 1.2 kg.</k:PESO>
+</k:bat>
+</Ejercicio_07>
