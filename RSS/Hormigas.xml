@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>Hormigas</title>
+	<description>Noticias de hormigas</description>
+	<link>http://cyber.harvard.edu/rss/rss.html#requiredChannelElements</link>
+	<ttl>30</ttl>
+
+<item>
+	<title>Antibióticos producidos por hormigas podrían aplicarse a los seres humanos</title>
+	<description>Científicos de EE UU han logrado resultados positivos en soluciones bacterianas con componentes antimicrobianos presentes en estos insectos.</description>
+    <link>https://www.20minutos.es/noticia/3255037/0/antibioticos-hormigas-aplicarse-humanos/</link>
+</item>
+<item>
+	<title>Un nuevo hongo se apodera del cuerpo de las hormigas y las convierte en zombis hambrientos</title>
+	<description> Un nuevo hongo, conocido como Ophiocordyceps unilteralis, ha convertido a las hormigas en zombis reales, haciendo que caminen sin pensar, coman la vegetación y cuelguen de los bordes de las hojas y ramitas.</description>
+	<link>https://www.20minutos.es/noticia/3187366/0/hongo-hormiga-zombis-reales/</link>
+</item>
+<item>
+	<title>Las hormigas rojas construyen con sus cuerpos estructuras similares a la Torre Eiffel</title>
+	<description>Las hormigas rojas usan sus cuerpos para construir estructuras similares a la Torre Eiffel cuando se ven obligadas a superar alturas para huir u obtener alimento, según revela un estudio publicado este martes por la Royal Society Open Science.</description>
+	<link>https://www.20minutos.es/noticia/3088617/0/hormigas-rojas-usan-cuerpos-construir-torres/</link>
+</item>
+</channel>
+</rss>
