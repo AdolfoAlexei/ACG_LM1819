@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>Hormigas</title>
+	<description>Artículos acerca de hormigas</description>
+	<link>https://www.20minutos.es/minuteca/hormigas/</link>
+	<ttl>30</ttl>
+
+<item>
+	<title>La hormiga Drácula es el animal que realiza el movimiento más rápido del mundo:</title>
+	<description>La hormiga Drácula (Mystrium camillae) tiene el movimiento animal más rápido jamás registrado en la Tierra, puesto que es capaz de cerrar sus mandíbulas a velocidades de hasta 90 metros por segundo</description>
+    <link>https://www.20minutos.es/noticia/3515026/0/hormiga-dracula-animal-movimiento-mas-rapido-mundo/</link>
+</item>
+<item>
+	<title>El aire se está llenado de hormigas voladoras</title>
+	<description>on la llegada del otoño, también llegan las bajadas de temperaturas, las lluvias y con ellas, es muy común ver muchísimas hormigas con alas, es decir, las llamadas hormigas voladoras.</description>
+	<link>https://www.20minutos.es/noticia/3463384/0/aire-lleno-todo-lo-que-deberias-saber-de-las-hormigas-voladoras/</link>
+</item>
+<item>
+	<title>Las hormigas 'enfermeras' que curan a sus compañeras heridas</title>
+	<description>Un estudio sobre comportamiento animal mostró que una especie de estos insectos socorre a los individuos que quedan maltrechos luego de las operaciones de caza con un tratamiento que reduce la mortalidad del 80 al 10 por ciento.</description>
+	<link>https://sostenibilidad.semana.com/medio-ambiente/articulo/las-hormigas-enfermeras-que-curan-a-sus-companeras-heridas/39491</link>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>Actualidad de la ciencia</title>
+	<description>Artículos sobre la ciencia y sus avances o curiosidades</description>
+	<link>https://noticiasdelaciencia.com/sec/ciencia</link>
+	<ttl>30</ttl>
+
+<item>
+	<title>Descubierta una nueva especie de hierba perenne que llevará el nombre de los Picos de Europa</title>
+	<description>El Parque Nacional de los Picos de Europa ha dado su nombre a una nueva especie de hierba perenne, descubierta en España. </description>
+    <link>https://noticiasdelaciencia.com/art/32481/descubierta-una-nueva-especie-de-hierba-perenne-que-llevara-el-nombre-de-los-picos-de-europa</link>
+</item>
+<item>
+	<title>Nuevos materiales para un deshielo eficiente</title>
+	<description>Según informa un nuevo estudio, reducir la tenacidad en lugar de la fuerza entre el hielo y la superficie es la clave para desarrollar materiales con un alto factor repelente de hielo.</description>
+	<link>https://noticiasdelaciencia.com/art/32459/nuevos-materiales-para-un-deshielo-eficiente</link>
+</item>
+<item>
+	<title>Desvelan la estructura de un transportador de aminoácidos de interés médico</title>
+	<description>En los seres humanos existen más de cincuenta transportadores de aminoácidos distintos que son responsables de incorporar a las células estas moléculas esenciales para ellas, así como de regular su balance en el medio celular.</description>
+	<link>https://noticiasdelaciencia.com/art/32462/desvelan-la-estructura-de-un-transportador-de-aminoacidos-de-interes-medico</link>
+</item>
+</channel>
+</rss>
