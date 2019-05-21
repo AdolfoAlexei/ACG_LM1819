@@ -1,0 +1,7 @@
+<!DOCTYPE Libropostres [
+<!ELEMENT Libropostres (receta+, ingrediente+)>
+<!ELEMENT receta (#PCDATA)>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ATTLIST receta id ID #REQUIRED>
+<!ATTLIST ingrediente ref IDREFS #IMPLIED>
+]>

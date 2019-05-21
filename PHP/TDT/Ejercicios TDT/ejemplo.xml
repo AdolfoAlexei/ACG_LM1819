@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE examen [
+  <!ELEMENT examen (grupo, fecha, tema, alumno+, nota*)>         <!--DTD que debe cumplirse-->
+  <!ELEMENT grupo (#PCDATA)>
+  <!ELEMENT fecha (#PCDATA)>
+  <!ELEMENT tema (#PCDATA)>
+  <!ELEMENT alumno (#PCDATA)>
+  <!ELEMENT nota (#PCDATA)>
+
+ <!ATTLIST alumno idAlumno ID #REQUIRED>
+ <!ATTLIST nota idNota IDREFS #REQUIRED>
+]>
+
+<examen>                                                        <!--XML que sigue el DTD-->
+<grupo>CFGS1</grupo>
+<fecha>20/05/2019</fecha>
+<tema>Cuestionario DTD</tema>
+<alumno idAlumno="a1">Alumno 1</alumno>
+<alumno idAlumno="a2">Alumno 2</alumno>
+<alumno idAlumno="a3">Alumno 3</alumno>
+<nota idNota="a1">8</nota>
+<nota idNota="a2">7</nota>
+<nota idNota="a3">5</nota>
+</examen>
