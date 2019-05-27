@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Revista [
   <!ELEMENT Revista (nombre, fecha, articulo+)>
-  <!ELEMENT articulo (titulo, autor*, numero_palabras, texto)>
+  <!ATTLIST REVISTA codigo ID #REQUIRED>
+  <!ELEMENT articulo (titulo, autor*, numero_palabras, texto?)>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT fecha (#PCDATA)>
   <!ELEMENT articulo (#PCDATA)>
   <!ELEMENT nombre (#PCDATA)>
-  <!ELEMENT titulo (#PCDATA)>
-  <!ELEMENT autor (#PCDATA)>
-  <!ELEMENT numero_palabras (#PCDATA)>
-  <!ELEMENT texto (#PCDATA)>
+  <!ELEMENT titulo (#PCDATA #REQUIRED)>
+  <!ELEMENT autor (#PCDATA #REQUIRED)>
+  <!ELEMENT numero_palabras (#PCDATA #REQUIRED)>
+  <!ELEMENT texto (#PCDATA #REQUIRED)>
 ]>
 
 <Revista>
-
+<nombre>El XML libre</nombre>
+<codigo>0954651235</codigo>
+<fecha>18-06-2018</fecha>
+<articulo>
+<titulo>XML y DTD: una aproximación</titulo>
+<autor>D. Marcos Ortega</autor>
+<numero_palabras>250</numero_palabras>
+</articulo>
+<articulo>
+<titulo>Los esquemas XML</titulo>
+<autor>D. Juan Antonio López y D. Guillermo Cadenas</autor>
+<numero_palabras>500</numero_palabras>
+</articulo>
 </Revista>
